@@ -117,6 +117,11 @@ form label {
     font-size: 19px;
 }
 
+textarea:focus, input:focus {
+    outline: none; /* Remueve el borde azul */
+    border: 2px solid #000; /* Agrega un borde personalizado */
+}
+
 form input {
     width: 90%;
     background-color: transparent;
