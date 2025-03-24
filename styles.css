@@ -57,6 +57,13 @@ nav a:active {
     width: 40%;
 }
 
+.subtitulo-proyectos {
+    text-align: center;
+    grid-column: 1/-1;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
 i {
     color: #FFAB5B;
 }
@@ -64,12 +71,15 @@ i {
 #projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: #FFAB5B;
+    color: #fff;
 }
 
 .project-tile {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 16px;
 }
 
 .tech-circle {
@@ -79,6 +89,58 @@ i {
 .project-image {
     height: 200px;
     object-fit: cover;
+}
+
+#contact {
+    background-color: #FFF2DB;
+}
+
+.encabezado-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.encabezado-servicios h2 {
+    font-size: 2rem;
+    padding: 5px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 25vh; 
+}
+
+form label {
+    margin: 10px 0;
+    font-size: 19px;
+}
+
+form input {
+    width: 90%;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #000;
+    font-size: 19px;
+}
+
+form input:active {
+    border: none;
+}
+
+form textarea {
+    grid-column: 1/-1;
+    width: 45%;
+    height: 20rem;
+    background: transparent;
+    border: 1px solid #000;
+}
+
+form input[type="submit"] {
+    background-color: #FFAB5B;
+    margin: 10px 0;
+    border: 0;
 }
 
 @media (max-width: 400px) {

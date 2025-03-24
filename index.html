@@ -20,7 +20,9 @@
             <p>Soluciones web al alcance de una sola lágrima</p>
         </div>
     </section>
+    
     <section id="projects">
+        <h2 class="subtitulo-proyectos">Proyectos destacados</h2>
         <article class="project-tile">
             <div>
                 <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" class="tech-circle">
@@ -60,16 +62,19 @@
     </section>
 
     <section id="contact">
-        <p>¿Quieres mis servicios? Envíame un correo electrónico</p>
+        <div class="encabezado-servicios">
+            <h2>¿Quieres mis servicios?</h2>
+            <h3>Envíame un correo electrónico</h3>
+        </div>
         <div>
             <form method="post" action="">
                 <label for="nombre">Nombre completo</label>
-                <input type="text" name="nombre" required>
                 <label for="email">Email</label>
-                <input type="email" name="email" required>
-                <label for="asunto">¿Qué necesitas?</label>
+                <input type="text" name="nombre" autocomplete="off" required>
+                <input type="email" name="email" autocomplete="off" required>
+                <label for="asunto" autocomplete="off">¿Qué necesitas?</label>
                 <textarea name="asunto"></textarea>
-                <input type="sumbit" value="Enviar correo">
+                <input type="submit" value="Enviar"/>
             </form>
             <img>
         </div>
