@@ -19,13 +19,13 @@ nav {
     z-index: 2;
 }
 
-nav a {
+nav a, .redes-sociales {
     color: #FFF2DB;
     font-size: 1.4rem;
     text-decoration: none;
 }
 
-nav a:hover {
+a:hover {
     color: #a0998d;
 }
 
@@ -75,6 +75,18 @@ i {
     color: #fff;
 }
 
+.nombre-proyecto {
+    text-decoration: none;
+}
+
+.nombre-proyecto:visited {
+    color: #000;
+}
+
+.nombre-proyecto:hover {
+    color: #FFF2DB;
+}
+
 .project-tile {
     display: flex;
     flex-direction: column;
@@ -91,7 +103,7 @@ i {
     object-fit: cover;
 }
 
-#contact {
+#contact, footer {
     background-color: #FFF2DB;
 }
 
@@ -146,6 +158,17 @@ form input[type="submit"] {
     background-color: #FFAB5B;
     margin: 10px 0;
     border: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.redes-sociales {
+    color: #000;
 }
 
 @media (max-width: 400px) {
